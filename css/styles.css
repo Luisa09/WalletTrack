@@ -241,3 +241,32 @@ form {
     max-width: 300px; /* Limitar el ancho del formulario */
 }
 
+.team {
+    display: flex; /* Usar flexbox para alinear los miembros en línea */
+    justify-content: center; /* Centrar los miembros */
+    margin-top: 20px; /* Espaciado superior de la sección del equipo */
+}
+
+.member {
+    text-align: center; /* Centrar el texto dentro de cada miembro */
+    margin: 0 15px; /* Espaciado horizontal entre miembros */
+}
+
+.member img {
+    width: 100px; /* Ancho de las imágenes de perfil */
+    height: 100px; /* Altura de las imágenes de perfil */
+    border-radius: 50%; /* Bordes redondeados para hacerlas circulares */
+    object-fit: cover; /* Asegura que la imagen llene el contenedor sin deformarse */
+    border: 2px solid #fff; /* Borde blanco alrededor de las imágenes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    margin-bottom: 5px; /* Espaciado inferior de las imágenes */
+}
+
+h4 {
+    margin: 5px 0; /* Espaciado superior e inferior de los nombres */
+}
+
+p {
+    font-size: 0.9em; /* Tamaño de fuente más pequeño para los roles */
+    color: #ccc; /* Color más claro para los roles */
+}
