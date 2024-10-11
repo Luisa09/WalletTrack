@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header {
+    background: #E4F1F2;
+    color: black;
+    padding: 1rem 0;
+}
+
+.header .logo {
+    float: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header nav {
+    float: right;
+}
+
+.header nav ul {
+    list-style: none;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.header nav ul li a, .btn-primary {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #44A617 ;
+    border-radius: 5px;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.features {
+    background: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.feature-box {
+    margin-bottom: 20px;
+}
+
+.about, .signup {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.signup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .footer-links {
+    list-style: none;
+}
+
+.footer .footer-links li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.footer .footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    display: none;
+    margin-top: 5px;
+}
+.logo-img {
+    height: 50px; /* Ajusta el tamaño del logo según lo necesites */
+    width: auto;  /* Esto mantiene las proporciones del logo */
+    float: left;  /* Para que el logo se alinee a la izquierda */
+    margin-right: 20px; /* Un espacio entre el logo y los elementos de navegación */
+}
+
+.hero {
+    background-color: #f4f4f4; /* Color de fondo para la sección */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ajusta el tamaño máximo del slider */
+    height: 400px; /* Altura fija del slider */
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el slider */
+    background-color: #f4f4f4; /* Opcional: Fondo para imágenes más pequeñas */
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Contiene la imagen completa dentro del contenedor */
+    display: none; /* Oculta las imágenes por defecto */
+    transition: opacity 0.5s ease; /* Transición suave al cambiar las imágenes */
+    background-color: white; /* Opcional: fondo para imágenes con proporciones diferentes */
+}
+
+.slide.active {
+    display: block; /* Solo la imagen activa es visible */
+}
+
