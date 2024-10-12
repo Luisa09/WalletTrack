@@ -44,17 +44,3 @@ setInterval(() => {
     showSlide(currentSlide); // Muestra la siguiente imagen
 }, 3000); // Cambia cada 3 segundos
 
-
-/*Registro*/
-document.getElementById('show-register').addEventListener('click', function(e) {
-    e.preventDefault(); // Prevenir comportamiento de enlace
-    var registerForm = document.getElementById('register-form');
-    
-    // Alternar visibilidad
-    if (registerForm.classList.contains('hidden')) {
-        registerForm.classList.remove('hidden');
-    } else {
-        registerForm.classList.add('hidden');
-    }
-});
-
