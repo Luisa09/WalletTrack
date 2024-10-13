@@ -65,19 +65,32 @@ body {
 }
 
 .features {
-    background: #f4f4f4;
-    padding: 50px 0;
-    text-align: center;
+    display: flex; /* Usa flexbox para alinear horizontalmente */
+    justify-content: space-between; /* Espacio entre las secciones */
+    padding: 50px 0; /* Espaciado superior e inferior */
+    background-color: #f4f4f4; /* Color de fondo */
 }
 
-.features h2 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
+.feature-left, .feature-right {
+    width: 48%; /* Cada sección ocupa el 48% del contenedor */
+    padding: 20px; /* Espaciado interno */
+    background: #fff; /* Color de fondo blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h2 {
+    text-align: center; /* Centrar los títulos */
 }
 
 .feature-box {
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Margen entre las cajas de características */
 }
+
+.pa {
+    margin-top: 10px; /* Margen superior para los párrafos */
+}
+
 
 .about, .signup {
     padding: 50px 0;
@@ -269,5 +282,10 @@ h4 {
 p {
     font-size: 0.9em; /* Tamaño de fuente más pequeño para los roles */
     color: #ccc; /* Color más claro para los roles */
+}
+
+.pa {
+    margin-top: 10px; /* Margen superior para el párrafo */
+    color: black;
 }
 
