@@ -25,22 +25,24 @@ document.getElementById('signup-form').addEventListener('submit', function(e) {
     }
 });
 // Slider de imágenes
-let currentSlide = 0; // Índice de la primera imagen
-const slides = document.querySelectorAll('.slide'); // Seleccionamos todas las imágenes del slider
-const totalSlides = slides.length; // Total de imágenes en el slider
 
-// Función para mostrar la imagen correspondiente
-function showSlide(index) {
-    slides.forEach(slide => slide.classList.remove('active')); // Elimina la clase 'active' de todas las imágenes
-    slides[index].classList.add('active'); // Añade la clase 'active' a la imagen actual
-}
+document.addEventListener('DOMContentLoaded', function () {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
 
-// Mostrar la primera imagen
-showSlide(currentSlide);
+    // Función para mostrar la imagen correspondiente
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active')); // Oculta todas las imágenes
+        slides[index].classList.add('active'); // Muestra la imagen activa
+    }
 
-// Cambiar automáticamente las imágenes cada 3 segundos
-setInterval(() => {
-    currentSlide = (currentSlide + 1) % totalSlides; // Incrementa el índice y reinicia cuando llega al final
-    showSlide(currentSlide); // Muestra la siguiente imagen
-}, 3000); // Cambia cada 3 segundos
+    // Mostrar la primera imagen
+    showSlide(currentSlide);
 
+    // Cambiar automáticamente las imágenes cada 3 segundos
+    setInterval(() => {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+    }, 3000);
+});
